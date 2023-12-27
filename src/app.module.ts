@@ -16,6 +16,7 @@ import { RefreshTokenModule } from './refresh-token/refresh-token.module';
       driver: ApolloDriver,
       autoSchemaFile: join(process.cwd(), 'src/schema.gql'),
       sortSchema: true,
+      introspection: true,
       playground: true,
       context: ({ req, res }) => ({ req, res }),
     }),
